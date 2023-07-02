@@ -2,7 +2,7 @@
 
 ## About
 
-This is an implementation of the OCP TimeCard for personal use based on the AMD Artix 7 XC7A100T FPGA, Symmetricom X72 rubidium atomic clock, and an M.2 GNSS module. The card will either be half-height PCI Express (PCIe) x1 or full-height PCI utilizing PI7C9X111SL as a reverse PCI-PCIe bridge. The card is meant to interface with a PCI 33MHz 5V slot directly or via a StarTech PCI1PEX1 adapter card. The X72 oscillator may be chassis-mounted or board-mounted if feasible.
+This is an implementation of the OCP TimeCard for personal use based on the AMD Artix 7 XC7A100T FPGA, Symmetricom X72 rubidium atomic clock, and an RCB-F9T GNSS module. The card will either be half-height PCI Express (PCIe) x1 or full-height PCI utilizing PI7C9X111SL as a reverse PCI-PCIe bridge. The card is meant to interface with a PCI 33MHz 5V slot directly or via a StarTech PCI1PEX1 adapter card. The X72 oscillator may be chassis-mounted or board-mounted if feasible.
 
 The use case of this card is to make use of the single PCI slot in the Supermicro X13SAE workstation motherboard for hosting a virtualized NTP and PTP server as well as serve as a frequency standard for hobbyist test equipment and amateur radio applications. Accurate timestamping of the IQ stream from one or more software-defined radios (SDRs) is one forseen application.
 
@@ -14,7 +14,6 @@ The outcomes of this project shall include:
 1. Working PCI card compatible with the Linux TimeCard driver
 2. Extended FPGA design which can configure the atomic clock at startup/reset and control its frequency
 3. Adequate cooling for the atomic clock in order to maintain frequency lock
-4. 
 
 ## Notes
 
